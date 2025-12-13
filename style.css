@@ -1,0 +1,124 @@
+:root {
+    --black: #180900;
+    --bege: #f9d9ac;
+    --marrom1: #260f01;
+    --white: #fff7ef;
+    --marrom: #8c3c0e;
+    --laranja: #ffae4a;
+    --border: 2px solid var(--marrom);
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: var(--black);
+}
+
+section {
+    padding: 30px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: var(--marrom1);
+    border-bottom: var(--border);
+}
+
+.header section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo img {
+    width: 130px;
+}
+
+.icons img {
+    width: 20px;
+    margin: 0 10px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    width: 23px;
+}
+
+.navbar a {
+    margin:  0 10px;
+    font-size: 13px;
+    color: var(--white);
+}
+
+.navbar a:hover {
+    font-size: 14px;
+}
+
+.btn {
+    background-color: var(--marrom);
+    color: var(--white);
+    padding: 10px 30px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: var(--marrom1);
+}
+
+.home-container {
+    background-image: linear-gradient(to top, var(--black) 0%, transparent 100%), 
+    url("/img/fundo-cafe.jpeg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.conteudo {
+    max-width: 600px;
+}
+
+.conteudo h3 {
+    color: var(--white);
+    font-size: 60px;
+}
+.conteudo h3 span {
+    color: var(--bege);
+}
+
+.conteudo p {
+    color: var(--white);
+    font-family: "Merriweather", sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 10px 0;
+}
