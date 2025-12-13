@@ -1,7 +1,7 @@
 :root {
     --black: #180900;
     --bege: #f9d9ac;
-    --marrom1: #260f01;
+    --marrom1: #361705;
     --white: #fff7ef;
     --marrom: #8c3c0e;
     --laranja: #ffae4a;
@@ -15,12 +15,19 @@
     outline: none;
     border: none;
     text-decoration: none;
-    transition: 0.2s linear;
+    transition: 0.3s linear;
     font-family: "Montserrat", sans-serif;
 }
 
 body {
-    background-color: var(--black);
+  background-color: #180900;
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(54, 23, 5, 0.3),
+    rgba(54, 23, 5, 0.3) 1px,
+    transparent 1px,
+    transparent 8px
+  );
 }
 
 section {
@@ -66,12 +73,12 @@ section {
 
 .navbar a {
     margin:  0 10px;
-    font-size: 13px;
+    font-size: 14px;
     color: var(--white);
 }
 
 .navbar a:hover {
-    font-size: 14px;
+    font-size: 15px;
     color: var(--bege);
 }
 
@@ -128,7 +135,7 @@ section {
     font-size: 40px;
     color: var(--white);
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .titulo span {
@@ -155,7 +162,7 @@ section {
     height: 400px;
     width: 600px;
     object-fit: cover;
-    border-radius: 10px 0 0 10px;
+    border-radius: 7px 0 0 7px;
 }
 
 .sobre .row .conteudo {
@@ -168,7 +175,7 @@ section {
     max-width: 600px;
     box-sizing: border-box;
     height: 100%;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 7px 7px 0;
 }
 
 .sobre .row .conteudo h3{
@@ -181,5 +188,61 @@ section {
     font-size: 13px;
     color: var(--white);
     padding: 10px 0;
+    text-align: justify;
     line-height: 1.8;
+}
+
+.box-container img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.menu {
+    max-height: calc(100vh - 30px);
+}
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.menu .box-container .box {
+    text-align: center;
+    border-radius: 7px;
+    padding: 20px;
+    background-color: var(--marrom1);
+    cursor: pointer;
+}
+
+.menu .box-container .box:hover {
+    background-color: var(--bege);
+    margin: 0 5px;
+}
+
+.menu .box-container .box h3 {
+    color: var(--white);
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.menu .box-container .box .price { 
+    color: var(--white);
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.menu .box-container .box .price span { 
+    color: var(--bege);
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+.menu .box-container .box:hover h3, 
+.menu .box-container .box:hover div {
+    color: var(--marrom1);
+}
+
+.menu .box-container .box:hover div span {
+    color: var(--marrom);
 }
