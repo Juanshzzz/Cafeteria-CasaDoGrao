@@ -301,3 +301,37 @@ section {
     gap: 20px;
     justify-content: center;
 }
+
+.endereco {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.endereco iframe {
+    border: var(--border);
+    width: 1200px;
+    border-radius: 7px;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.rodape .share img {
+    height: 30px;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+
+.rodape .share img:hover {
+    background-color: var(--marrom);
+    padding: 10px;
+}
